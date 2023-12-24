@@ -1,0 +1,37 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "§qSapling §7Addon §31.20.50 §u[rewrite] §sBeta-0.3",
+		"description": "§2Developed by Alecs\n§rRewritten in §uAmethystJs",
+		"uuid": "813a4d54-12a3-42b2-be3e-65d33a3c8296",
+		"min_engine_version": [1, 20, 0],
+		"version": [1, 0, 0]
+	},
+	"modules": [
+		{
+			"description": "Behavior Pack Module",
+			"type": "data",
+			"uuid": "52953972-a1e3-46ce-8865-dc49b58d5a5b",
+			"version": [1, 0, 0]
+		},
+		{
+			"description": "Gametest Module",
+			"type": "script",
+			"language": "javascript",
+			"entry": "scripts/main.js",
+			"uuid": "18eeb331-31a7-4171-81a4-f6b62795010d",
+			"version": [1, 0, 0]
+		}
+	],
+	"capabilities": ["script_eval"],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.8.0-beta"
+		},
+		{
+             "module_name": "@minecraft/server-gametest",
+             "version": "1.0.0-beta"
+        }
+    ]
+}
